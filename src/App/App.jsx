@@ -1,6 +1,9 @@
 import userData from "../userData.json";
 import Profile from "../components/Profile/Profile";
 
+import friends from "../friends.json";
+import FriendList from "../components/FriendList/FriendList";
+
 export default function App() {
   return (
     <>
@@ -14,7 +17,7 @@ export default function App() {
         stats={userData.stats}
       />
       
-      {/* <OfficerList items={officers} /> */}
+      <FriendList friends={friends} />
     </>
   );
 }
